@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Responsive CSS Mastery — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="logo">Tech<strong> Satya</strong></div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="menu-toggle" aria-hidden="true" id="menuToggle"><span></span></div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-left animate">
+        <h1>Design with CSS — Learn Every Property by Building</h1>
+        <p>Complete responsive portfolio demonstrating display, position, flex, grid, shadows, outlines, animations, transforms, pseudo-elements and more. Tweak, experiment and learn.</p>
+        <div class="cta">
+          <button class="btn">Download Resume</button>
+          <button class="btn ghost">View Projects</button>
+        </div>
+      </div>
+
+      <div class="hero-right animate">
+        <div class="showcase" role="img" aria-label="project showcase">
+          <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" alt="showcase"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="text">
+        <h2>About Me</h2>
+        <p class="lead">I build elegant interfaces and enjoy explaining how every CSS rule affects layout and performance.</p>
+        <p class="text">I've built components using <span class="highlight">Flexbox</span>, <span class="highlight">CSS Grid</span> and micro-interactions with <span class="highlight">transitions</span> and <span class="highlight">animations</span>. This project ties them all together so you can learn by editing and observing the results.</p>
+      </div>
+      <div class="stats">
+        <div class="skill" data-progress="90">
+          <h4>HTML</h4>
+          <div class="progress"></div>
+        </div>
+        <div class="skill" data-progress="75">
+          <h4>CSS</h4>
+          <div class="progress"></div>
+        </div>
+        <div class="skill" data-progress="65">
+          <h4>JavaScript</h4>
+          <div class="progress"></div>
+        </div>
+        <div class="skill" data-progress="50">
+          <h4>React</h4>
+          <div class="progress"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <h3 style="text-align:center;margin-bottom:12px">Core Skills</h3>
+      <div class="skills-grid">
+        <div class="skill" data-progress="90">
+          <h4>Layout</h4>
+          <div class="progress"></div>
+        </div>
+        <div class="skill" data-progress="75">
+          <h4>Animations</h4>
+          <div class="progress"></div>
+        </div>
+        <div class="skill" data-progress="65">
+          <h4>Accessibility</h4>
+          <div class="progress"></div>
+        </div>
+        <div class="skill" data-progress="50">
+          <h4>Performance</h4>
+          <div class="progress"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1505082625156-3f7c9a6c7f3f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" alt="project bg"/>
+        <div class="meta">
+          <h4>Project Alpha</h4>
+          <p style="color:var(--muted)">A responsive grid showcase with hover overlay using pseudo-elements.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1522199670076-2852f80289c9?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" alt="project bg"/>
+        <div class="meta">
+          <h4>Project Beta</h4>
+          <p style="color:var(--muted)">Complex card interactions: box-shadow, transform and outline focus for accessibility.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" alt="project bg"/>
+        <div class="meta">
+          <h4>Project Gamma</h4>
+          <p style="color:var(--muted)">Animated hero with text-shadow and layered backgrounds.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" alt="project bg"/>
+        <div class="meta">
+          <h4>Project Delta</h4>
+          <p style="color:var(--muted)">Interactive forms with outline focus and accessibility-first design.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h3 style="text-align:center;margin-bottom:12px">Contact</h3>
+      <form onsubmit="event.preventDefault();alert('Demo submit — add backend to send message')">
+        <input type="text" placeholder="Your name" required aria-label="name" />
+        <input type="email" placeholder="Email" required aria-label="email" />
+        <textarea placeholder="Your message" aria-label="message"></textarea>
+        <div class="submit">
+          <button class="btn" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <strong>CSSMastery</strong> — Learn by building</div>
+      <div class="socials">
+        <a href="#" aria-label="twitter">Twitter</a>
+        <a href="#" aria-label="github">GitHub</a>
+        <a href="#" aria-label="linkedin">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
