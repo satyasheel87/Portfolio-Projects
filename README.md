@@ -1,2 +1,2 @@
 # Web-Projects
-Hi i am satyasheel gautam.
+Hi, my name is Satyasheel Gautam. I am a passionate Computer Science student and a budding Digital Marketer with a strong interest in technology and web development. I am currently focused on advancing my skills to become a hardcore Full-Stack Web Developer, mastering both frontend and backend technologies. I thrive on building efficient, user-friendly web applications and constantly learning new tools and frameworks to stay at the forefront of the digital world.
