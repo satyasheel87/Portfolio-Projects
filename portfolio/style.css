@@ -19,10 +19,17 @@
     body{
       font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
       background:linear-gradient(180deg,var(--bg),#071021 200px), url('') no-repeat center/cover;
-      color:#e6eef6;line-height:1.45;min-height:100vh;
+      color:#e6eef6;
+      line-height:1.45;
+      min-height:100vh;
     }
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
+    a{color:inherit;
+      text-decoration:none
+   }
+    img{
+      max-width:100%;
+      display:block
+   }
 
     /* ========================
        Top Navbar (Flex, Sticky)
